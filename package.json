@@ -3,7 +3,18 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "canvas": "github:automattic/node-canvas#v1.6.5",
+    "command-line-args": "^5.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-eslint": "^7.1.1",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0"
+  },
   "scripts": {
+    "start": "./node_modules/babel-cli/bin/babel-node.js ./index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
